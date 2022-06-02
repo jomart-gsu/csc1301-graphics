@@ -22,6 +22,10 @@ def draw_oval(x1, y1, x2, y2, fill):
     gc.canvas.create_oval(x1, y1, x2, y2, fill=fill)
 
 
+def draw_circle(x, y, r, fill):
+    draw_oval(x - r, y - r, x + r, y + r, fill=fill)
+
+
 def draw_rectangle(x1, y1, x2, y2, fill):
     gc.canvas.create_rectangle(x1, y1, x2, y2, fill=fill)
 
